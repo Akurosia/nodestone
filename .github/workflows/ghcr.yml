@@ -7,7 +7,10 @@ jobs:
   build_and_publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo + submodules
+        uses: actions/checkout@v3
+        with:
+          submodules: 'true'
       - name: Build and push the image
         run: |
           docker login --username akurosia --password ${{ secrets.GH_PAT }} ghcr.io
