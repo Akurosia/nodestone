@@ -1,7 +1,10 @@
 import express from "express";
 import { Character } from "./profile/character";
+import { Equipment } from "./profile/equipment";
 import { Achievements } from "./profile/achievements";
 import { ClassJob } from "./profile/classjob";
+import { Minions } from './profile/minions';
+import { Mounts } from './profile/mounts';
 import { FreeCompany } from "./freecompany/freecompany";
 import { FCMembers } from "./freecompany/members";
 import { CharacterSearch } from "./search/character-search";
@@ -10,8 +13,11 @@ import { FreeCompanySearch } from "./search/freecompany-search";
 const app = express();
 
 const characterParser = new Character();
+const equipmentParser = new Equipment();
 const achievementsParser = new Achievements();
 const classJobParser = new ClassJob();
+const minionsParser = new Minions();
+const mountsParser = new Mounts();
 const freeCompanyParser = new FreeCompany();
 const freeCompanyMemberParser = new FCMembers();
 const characterSearch = new CharacterSearch();
@@ -53,24 +59,26 @@ app.get("/Character/:characterId", async (req, res) => {
   }
   try {
     const character = await characterParser.parse(req, "Character.");
+    const equipment = await equipmentParser.parse(req, "Character.");
+
+    const additionalData = Array.isArray(req.query.data) ? req.query.data : [req.query.data].filter((d) => !!d);
+    let achievements = additionalData.includes("AC") ? await achievementsParser.parse(req, "Achievements.") : undefined;
+    let classjobs = additionalData.includes("CJ") ? await classJobParser.parse(req, "ClassJobs.") : undefined;
+    let minions = additionalData.includes("MI") || additionalData.includes("MIMO") || additionalData.includes("MOMI") ? await minionsParser.parse(req, "Minions.") : undefined;
+    let mounts = additionalData.includes("MO") || additionalData.includes("MIMO") || additionalData.includes("MOMI") ? await mountsParser.parse(req, "Mounts.") : undefined;
+
     const parsed: any = {
       Character: {
         ID: +req.params.characterId,
         ...character,
+        Equipment: {...equipment},
+        ClassJobs: {...classjobs},
       },
+      Achievements: {...achievements},
+      ...mounts,
+      ...minions,
     };
-    const additionalData = Array.isArray(req.query.data)
-      ? req.query.data
-      : [req.query.data].filter((d) => !!d);
-    if (additionalData.includes("AC")) {
-      parsed.Achievements = await achievementsParser.parse(
-        req,
-        "Achievements."
-      );
-    }
-    if (additionalData.includes("CJ")) {
-      parsed.ClassJobs = await classJobParser.parse(req, "ClassJobs.");
-    }
+    delete parsed.Character.ClassjobIcons;
     return res.status(200).send(parsed);
   } catch (err: any) {
     if (err.message === "404") {

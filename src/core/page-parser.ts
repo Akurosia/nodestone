@@ -1,9 +1,9 @@
-import {Request} from "express";
-import {CssSelectorDefinition, CssSelectorRegistry} from "./css-selector-registry";
+import { Request } from "express";
+import { CssSelectorDefinition, CssSelectorRegistry } from "./css-selector-registry";
 // @ts-ignore
 import * as RegexTranslator from 'regex-translator';
-import {parseHTML} from 'linkedom';
-import {isNaN, snakeCase} from 'lodash';
+import { parseHTML } from 'linkedom';
+import { isNaN, snakeCase } from 'lodash';
 
 const axios = require('axios').default;
 
@@ -14,7 +14,12 @@ export abstract class PageParser {
     protected abstract getCSSSelectors(): CssSelectorRegistry;
 
     public async parse(req: Request, columnsPrefix = ''): Promise<Object> {
-        const {data} = await axios.get(this.getURL(req)).catch((err: any) => {
+        const local_url = this.getURL(req);
+        let header = {}
+        if (local_url.endsWith("mount") || local_url.endsWith("minion")){
+            header = {'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; SCH-I535 Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30'}
+        }
+        const {data} = await axios.get(local_url, {headers: header}).catch((err: any) => {
             throw new Error(err.response.status);
         });
         const dom = parseHTML(data);
