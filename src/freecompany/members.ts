@@ -10,7 +10,7 @@ export class FCMembers extends PaginatedPageParser {
 
   protected getBaseURL(req: Request): string {
     return (
-      "https://na.finalfantasyxiv.com/lodestone/freecompany/" +
+      "https://de.finalfantasyxiv.com/lodestone/freecompany/" +
       req.params.fcId +
       "/member"
     );

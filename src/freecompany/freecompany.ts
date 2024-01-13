@@ -6,7 +6,7 @@ import { CssSelectorRegistry } from "../core/css-selector-registry";
 export class FreeCompany extends PageParser {
   protected getURL(req: Request): string {
     return (
-      "https://na.finalfantasyxiv.com/lodestone/freecompany/" + req.params.fcId
+      "https://de.finalfantasyxiv.com/lodestone/freecompany/" + req.params.fcId
     );
   }
 

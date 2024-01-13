@@ -4,13 +4,9 @@ import * as classjob from "../lib/lodestone-css-selectors/profile/classjob.json"
 import { PaginatedPageParser } from "../core/paginated-page-parser";
 
 export class ClassJob extends PaginatedPageParser {
-  protected getCSSSelectors(): CssSelectorRegistry {
-    return classjob;
-  }
-
   protected getBaseURL(req: Request): string {
     return (
-      "https://na.finalfantasyxiv.com/lodestone/character/" +
+      "https://de.finalfantasyxiv.com/lodestone/character/" +
       req.params.characterId +
       "/class_job"
     );
@@ -20,5 +16,9 @@ export class ClassJob extends PaginatedPageParser {
     const fromSuper: any = await super.parse(req, columnsPrefix);
     delete fromSuper.Pagination;
     return fromSuper;
+  }
+
+  protected getCSSSelectors(): CssSelectorRegistry {
+    return classjob;
   }
 }

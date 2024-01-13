@@ -12,7 +12,7 @@ export class CharacterSearch extends PaginatedPageParser {
     } else if (req.query.server) {
       query += `&worldname=${req.query.server}`;
     }
-    return `https://na.finalfantasyxiv.com/lodestone/character/${query}`;
+    return `https://de.finalfantasyxiv.com/lodestone/character/${query}`;
   }
 
   protected getCSSSelectors(): CssSelectorRegistry {

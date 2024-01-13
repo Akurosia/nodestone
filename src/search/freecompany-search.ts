@@ -11,7 +11,7 @@ export class FreeCompanySearch extends PaginatedPageParser {
     } else if (req.query.server) {
       query += `&worldname=${req.query.server}`;
     }
-    return `https://na.finalfantasyxiv.com/lodestone/freecompany/${query}`;
+    return `https://de.finalfantasyxiv.com/lodestone/freecompany/${query}`;
   }
 
   protected getCSSSelectors(): CssSelectorRegistry {
