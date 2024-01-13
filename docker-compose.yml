@@ -1,0 +1,7 @@
+version: "3.4"
+services:
+  nodestone:
+    image: ghcr.io/akurosia/nodestone:latest
+    restart: unless-stopped
+    ports:
+      - 8344:8080
