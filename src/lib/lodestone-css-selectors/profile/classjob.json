@@ -13,26 +13,26 @@
     },
     "BOZJA": {
         "LEVEL": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(2)"
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(2)"
         },
         "METTLE": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(4)",
-            "regex": "(?P<Aktueller Bericht>\\S+) \\/"
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(4)",
+            "regex": "(?P<Meddle>\\S+) \\/"
         },
         "NAME": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(3)"
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(3)"
         }
     },
     "EUREKA": {
         "EXP": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(4)",
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(4)",
             "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
         },
         "LEVEL": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(2)"
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(2)"
         },
         "NAME": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(3)"
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(3)"
         }
     },
     "PALADIN": {
