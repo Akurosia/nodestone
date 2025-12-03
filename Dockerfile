@@ -22,5 +22,5 @@ USER node
 # Expose the port the app runs on.
 EXPOSE 8080
 
-# Run the web service on container startup.
+# Run the web service on container startup.1
 CMD [ "yarn", "run", "express:start" ]
