@@ -1,4 +1,39 @@
 {
+    "EUREKA": {
+        "EXP": {
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(4)",
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
+        },
+        "LEVEL": {
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(2)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(3)",
+            "type": "string"
+        }
+    },
+    "BOZJA": {
+        "LEVEL": {
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(2)",
+            "type": "integer"
+        },
+        "METTLE": {
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(4)",
+            "regex": "(?P<Meddle>\\S+) \\/",
+            "type": {
+              "Meddle": "string"
+            }
+        },
+        "NAME": {
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(3)",
+            "type": "string"
+        }
+    },
     "OCCULT": {
         "EXP": {
             "selector": "div.character__job__list:nth-child(11) > div:nth-child(4)",
@@ -14,41 +49,6 @@
         },
         "NAME": {
             "selector": "div.character__job__list:nth-child(11) > div:nth-child(3)",
-            "type": "string"
-        }
-    },
-    "BOZJA": {
-        "LEVEL": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(2)",
-            "type": "integer"
-        },
-        "METTLE": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(4)",
-            "regex": "(?P<Meddle>\\S+) \\/",
-            "type": {
-              "Meddle": "string"
-            }
-        },
-        "NAME": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(3)",
-            "type": "string"
-        }
-    },
-    "EUREKA": {
-        "EXP": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
-            "type": {
-              "CurrentEXP": "integer",
-              "MaxEXP": "integer"
-            }
-        },
-        "LEVEL": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(2)",
-            "type": "integer"
-        },
-        "NAME": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(3)",
             "type": "string"
         }
     },
