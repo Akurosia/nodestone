@@ -2,609 +2,872 @@
     "OCCULT": {
         "EXP": {
             "selector": "div.character__job__list:nth-child(11) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         },
         "LEVEL": {
-            "selector": "div.character__job__list:nth-child(11) > div:nth-child(2)"
+            "selector": "div.character__job__list:nth-child(11) > div:nth-child(2)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__job__list:nth-child(11) > div:nth-child(3)"
+            "selector": "div.character__job__list:nth-child(11) > div:nth-child(3)",
+            "type": "string"
         }
     },
     "BOZJA": {
         "LEVEL": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(2)"
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(2)",
+            "type": "integer"
         },
         "METTLE": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(4)",
-            "regex": "(?P<Meddle>\\S+) \\/"
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(4)",
+            "regex": "(?P<Meddle>\\S+) \\/",
+            "type": {
+              "Meddle": "string"
+            }
         },
         "NAME": {
-            "selector": "div.character__job__list:nth-child(9) > div:nth-child(3)"
+            "selector": "div.character__job__list:nth-child(7) > div:nth-child(3)",
+            "type": "string"
         }
     },
     "EUREKA": {
         "EXP": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(4)",
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         },
         "LEVEL": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(2)"
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(2)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__job__list:nth-child(7) > div:nth-child(3)"
+            "selector": "div.character__job__list:nth-child(9) > div:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB1": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(1) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(1) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(1) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(1) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(1) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(1) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB2": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(2) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(2) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(2) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(2) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(2) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(2) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB3": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(3) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(3) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(3) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(3) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(3) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(3) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB4": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(4) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(4) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(4) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(4) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(4) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(4) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB5": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(5) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(5) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(5) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(5) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(5) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(5) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB6": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(6) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(6) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(6) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(6) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(6) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(6) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB7": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(7) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(7) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(7) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(7) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(7) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(7) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB8": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(8) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(8) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(8) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(8) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(8) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(8) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB9": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(9) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(9) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(9) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(9) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(9) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(9) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB10": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(10) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(10) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(10) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(10) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(10) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(10) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB11": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(11) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(11) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(11) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(11) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(11) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(11) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB12": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(12) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(12) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(12) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(12) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(12) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(12) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB13": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(13) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(13) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(13) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(13) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(13) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(13) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB14": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(14) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(14) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(14) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(14) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(14) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(14) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB15": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(15) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(15) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(15) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(15) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(15) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(15) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PHANTOMJOB16": {
         "EXP": {
-            "selector": "div.character__support_job > ul > li:nth-child(16) > .character__support_job__status > p:nth-child(5)"
+            "selector": "div.character__support_job > ul > li:nth-child(16) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
         },
         "LEVEL": {
-            "selector": "div.character__support_job > ul > li:nth-child(16) > .character__support_job__status > p:nth-child(4)"
+            "selector": "div.character__support_job > ul > li:nth-child(16) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
         },
         "NAME": {
-            "selector": "div.character__support_job > ul > li:nth-child(16) > .character__support_job__status > p:nth-child(3)"
+            "selector": "div.character__support_job > ul > li:nth-child(16) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
         }
     },
     "PALADIN": {
         "LEVEL": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "WARRIOR": {
         "LEVEL": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "DARKKNIGHT": {
         "LEVEL": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "GUNBREAKER": {
         "LEVEL": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(2)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(3)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "WHITEMAGE": {
         "LEVEL": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "SCHOLAR": {
         "LEVEL": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "ASTROLOGIAN": {
         "LEVEL": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "SAGE": {
         "LEVEL": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(2)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(3)"
+            "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "MONK": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "DRAGOON": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "NINJA": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "SAMURAI": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "REAPER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "VIPER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "BARD": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "MACHINIST": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "DANCER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(3) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "BLACKMAGE": {
         "LEVEL": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(1) > div:nth-child(2)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(1) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(1) > div:nth-child(3)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(1) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "ul.character__job:nth-child(4) > li:nth-child(1) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "SUMMONER": {
         "LEVEL": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(2) > div:nth-child(2)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(2) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(2) > div:nth-child(3)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(2) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "ul.character__job:nth-child(4) > li:nth-child(2) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "REDMAGE": {
         "LEVEL": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(3) > div:nth-child(2)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(3) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(3) > div:nth-child(3)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(3) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "ul.character__job:nth-child(4) > li:nth-child(3) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "PICTOMANCER": {
         "LEVEL": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(4) > div:nth-child(2)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(4) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(4) > div:nth-child(3)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(4) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "ul.character__job:nth-child(4) > li:nth-child(4) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "BLUEMAGE": {
         "LEVEL": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(5) > div:nth-child(2)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(5) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "ul.character__job:nth-child(4) > li:nth-child(5) > div:nth-child(3)"
+            "selector": "ul.character__job:nth-child(4) > li:nth-child(5) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "ul.character__job:nth-child(4) > li:nth-child(5) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "CARPENTER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "BLACKSMITH": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "ARMORER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "GOLDSMITH": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(4) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "LEATHERWORKER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "WEAVER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(6) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "ALCHEMIST": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(7) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(7) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(7) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(7) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(7) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "CULINARIAN": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(8) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(8) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(8) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(8) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(8) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "MINER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "BOTANIST": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     },
     "FISHER": {
         "LEVEL": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(2)",
+            "type": "integer"
         },
         "UNLOCKSTATE": {
-            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)"
+            "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(3)",
+            "type": "string"
         },
         "EXP": {
             "selector": "div.clearfix:nth-child(5) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > div:nth-child(4)",
-            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)"
+            "regex": "(?P<CurrentEXP>\\S+) \\/ (?P<MaxEXP>\\S+)",
+            "type": {
+              "CurrentEXP": "integer",
+              "MaxEXP": "integer"
+            }
         }
     }
 }

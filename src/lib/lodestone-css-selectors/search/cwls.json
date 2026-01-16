@@ -10,27 +10,39 @@
         "ID": {
             "selector": ".entry__link--line",
             "attribute": "href",
-            "regex": "/lodestone/crossworld_linkshell/(?P<ID>\\w*)/"
+            "regex": "/lodestone/crossworld_linkshell/(?P<ID>\\w*)/",
+            "type": {
+              "ID": "integer"
+            }
         },
         "NAME": {
-            "selector": ".entry__name"
+            "selector": ".entry__name",
+            "type": "string"
         },
         "DC": {
-            "selector": ".entry__world"
+            "selector": ".entry__world",
+            "type": "string"
         },
         "ACTIVE_MEMBERS": {
-            "selector": ".entry__linkshell__member > div > span"
+            "selector": ".entry__linkshell__member > div > span",
+            "type": "integer"
         }
     },
     "PAGE_INFO": {
         "selector": "ul.btn__pager:nth-child(6) > li:nth-child(3)",
-        "regex": "\\D*(?P<CurrentPage>\\d+)\\D*(?P<NumPages>\\d+)"
+        "regex": "\\D*(?P<CurrentPage>\\d+)\\D*(?P<NumPages>\\d+)",
+        "type": {
+          "CurrentPage": "integer",
+          "NumPages": "integer"
+        }
     },
     "LIST_NEXT_BUTTON": {
         "selector": "ul.btn__pager > li:nth-child(4) > a:nth-child(1)",
-        "attribute": "href"
+        "attribute": "href",
+        "type": "string"
     },
     "NO_RESULTS_FOUND": {
-        "selector": ".parts__zero"
+        "selector": ".parts__zero",
+        "type": "string"
     }
 }
