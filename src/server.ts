@@ -2,6 +2,7 @@ import express from "express";
 import logger from './logger/logger';
 import pinoHttp from 'pino-http';
 import { Character } from "./profile/character";
+import { Attributes } from "./profile/attributes";
 import { Equipment } from "./profile/equipment";
 import { Achievements } from "./profile/achievements";
 import { ClassJob } from "./profile/classjob";
@@ -18,6 +19,7 @@ const httpLogger = pinoHttp({ logger });
 app.use(httpLogger);
 
 const characterParser = new Character();
+const attributesParser = new Attributes();
 const equipmentParser = new Equipment();
 const achievementsParser = new Achievements();
 const classJobParser = new ClassJob();
@@ -64,6 +66,7 @@ app.get("/Character/:characterId", async (req, res) => {
   }
   try {
     const character = await characterParser.parse(req, "Character.");
+    const attributes = await attributesParser.parse(req, "Character.");
     const equipment = await equipmentParser.parse(req, "Character.");
 
     const additionalData = Array.isArray(req.query.data) ? req.query.data : [req.query.data].filter((d) => !!d);
@@ -76,6 +79,7 @@ app.get("/Character/:characterId", async (req, res) => {
       Character: {
         ID: +req.params.characterId,
         ...character,
+        Attributes: {...attributes},
         Equipment: {...equipment},
         ClassJobs: {...classjobs},
       },
