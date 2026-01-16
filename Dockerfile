@@ -1,5 +1,5 @@
 # Use the alpine Node.js 20 image.
-FROM node:20-alpine
+FROM node:24-alpine
 
 # Create and change to the app directory.
 WORKDIR /usr/src/app
