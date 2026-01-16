@@ -1,5 +1,5 @@
 import { PaginatedPageParser } from "../core/paginated-page-parser";
-import { CssSelectorRegistry } from "../core/css-selector-registry";
+import { CssSelectorRegistry, PAGE_REGION } from "../core/css-selector-registry";
 import * as characterSearch from "../lib/lodestone-css-selectors/search/character.json";
 import { Request } from "express";
 import logger from "../logger/logger";
@@ -15,7 +15,7 @@ export class CharacterSearch extends PaginatedPageParser {
     } else {
       query += '&worldname=';
     }
-    return `https://de.finalfantasyxiv.com/lodestone/character/${query}`;
+    return `https://${PAGE_REGION}.finalfantasyxiv.com/lodestone/character/${query}`;
   }
 
   protected getCSSSelectors(): CssSelectorRegistry {

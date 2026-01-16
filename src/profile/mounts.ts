@@ -1,12 +1,12 @@
 import { Request } from "express";
-import { CssSelectorRegistry } from "../core/css-selector-registry";
+import {CssSelectorRegistry, PAGE_REGION} from "../core/css-selector-registry";
 import * as mounts from '../lib/lodestone-css-selectors/profile/mount.json';
 import { PaginatedPageParser } from "../core/paginated-page-parser";
 
 export class Mounts extends PaginatedPageParser {
   protected getBaseURL(req: Request): string {
     return (
-      "https://de.finalfantasyxiv.com/lodestone/character/" +
+      "https://"+ PAGE_REGION + ".finalfantasyxiv.com/lodestone/character/" +
       req.params.characterId +
       "/mount"
     );

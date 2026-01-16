@@ -1,12 +1,12 @@
 import { Request } from "express";
-import { CssSelectorRegistry } from "../core/css-selector-registry";
+import {CssSelectorRegistry, PAGE_REGION} from "../core/css-selector-registry";
 import * as minions from '../lib/lodestone-css-selectors/profile/minion.json';
 import { PaginatedPageParser } from "../core/paginated-page-parser";
 
 export class Minions extends PaginatedPageParser {
   protected getBaseURL(req: Request): string {
     return (
-      "https://de.finalfantasyxiv.com/lodestone/character/" +
+      "https://"+ PAGE_REGION + ".finalfantasyxiv.com/lodestone/character/" +
       req.params.characterId +
       "/minion"
     );
