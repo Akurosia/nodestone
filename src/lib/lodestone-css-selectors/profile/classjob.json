@@ -276,6 +276,118 @@
             "type": "string"
         }
     },
+    "PHANTOMJOB17": {
+        "EXP": {
+            "selector": "div.character__support_job > ul > li:nth-child(17) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
+        },
+        "LEVEL": {
+            "selector": "div.character__support_job > ul > li:nth-child(17) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__support_job > ul > li:nth-child(17) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
+        }
+    },
+    "PHANTOMJOB18": {
+        "EXP": {
+            "selector": "div.character__support_job > ul > li:nth-child(18) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
+        },
+        "LEVEL": {
+            "selector": "div.character__support_job > ul > li:nth-child(18) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__support_job > ul > li:nth-child(18) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
+        }
+    },
+    "PHANTOMJOB19": {
+        "EXP": {
+            "selector": "div.character__support_job > ul > li:nth-child(19) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
+        },
+        "LEVEL": {
+            "selector": "div.character__support_job > ul > li:nth-child(19) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__support_job > ul > li:nth-child(19) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
+        }
+    },
+    "PHANTOMJOB20": {
+        "EXP": {
+            "selector": "div.character__support_job > ul > li:nth-child(20) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
+        },
+        "LEVEL": {
+            "selector": "div.character__support_job > ul > li:nth-child(20) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__support_job > ul > li:nth-child(20) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
+        }
+    },
+    "PHANTOMJOB21": {
+        "EXP": {
+            "selector": "div.character__support_job > ul > li:nth-child(21) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
+        },
+        "LEVEL": {
+            "selector": "div.character__support_job > ul > li:nth-child(21) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__support_job > ul > li:nth-child(21) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
+        }
+    },
+    "PHANTOMJOB22": {
+        "EXP": {
+            "selector": "div.character__support_job > ul > li:nth-child(22) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
+        },
+        "LEVEL": {
+            "selector": "div.character__support_job > ul > li:nth-child(22) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__support_job > ul > li:nth-child(22) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
+        }
+    },
+    "PHANTOMJOB23": {
+        "EXP": {
+            "selector": "div.character__support_job > ul > li:nth-child(23) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
+        },
+        "LEVEL": {
+            "selector": "div.character__support_job > ul > li:nth-child(23) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__support_job > ul > li:nth-child(23) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
+        }
+    },
+    "PHANTOMJOB24": {
+        "EXP": {
+            "selector": "div.character__support_job > ul > li:nth-child(24) > .character__support_job__status > p:nth-child(5)",
+            "type": "integer"
+        },
+        "LEVEL": {
+            "selector": "div.character__support_job > ul > li:nth-child(24) > .character__support_job__status > p:nth-child(4)",
+            "type": "integer"
+        },
+        "NAME": {
+            "selector": "div.character__support_job > ul > li:nth-child(24) > .character__support_job__status > p:nth-child(3)",
+            "type": "string"
+        }
+    },
     "PALADIN": {
         "LEVEL": {
             "selector": ".character__content > div:nth-child(2) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > div:nth-child(2)",
